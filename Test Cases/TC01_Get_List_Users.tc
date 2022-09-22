@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Get_List_Users</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abb93164-ecc5-4bbc-8ce1-f63ab259d8de</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/TC01_Get_List_Users","testCaseId":"Test Cases/TC01_Get_List_Users","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC02_Post_New_User","testCaseId":"Test Cases/TC02_Post_New_User","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC03_Post_Succes_Registered","testCaseId":"Test Cases/TC03_Post_Succes_Registered","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC04_Validasi_Response_Login","testCaseId":"Test Cases/TC04_Validasi_Response_Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC05_Validasi_Response_Update","testCaseId":"Test Cases/TC05_Validasi_Response_Update","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC06_Validasi_Response_Delete","testCaseId":"Test Cases/TC06_Validasi_Response_Delete","iterationVariableName":""}

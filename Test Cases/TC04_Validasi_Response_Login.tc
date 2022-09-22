@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifikasi response Login</description>
+   <name>TC04_Validasi_Response_Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3c3dcfb-f90f-4b41-a3df-814ffbb2823f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifikasi API Post Sukses Registrasi</description>
+   <name>TC03_Post_Succes_Registered</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>930a0d98-77d5-4bbb-b808-e87bb2402cf6</testCaseGuid>
+</TestCaseEntity>

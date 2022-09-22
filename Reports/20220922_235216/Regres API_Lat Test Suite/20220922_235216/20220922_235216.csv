@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regres API_Lat Test Suite,,Uji API Lat,,2022-09-22 23:52:20,2022-09-22 23:52:35,14.542s,PASSED
+,,,,,,,
+Test Cases/TC01_Get_List_Users,,,,2022-09-22 23:52:21,2022-09-22 23:52:25,4.337s,PASSED
+"response = sendRequest(findTestObject(""CRUD_API/Get API/Get All Users""))",,Menguji API Get All Users,,2022-09-22 23:52:21,2022-09-22 23:52:25,3.473s,PASSED
+"verifyResponseStatusCode(response, 200)",,Verifikasi Response & Kode Status,,2022-09-22 23:52:25,2022-09-22 23:52:25,0.026s,PASSED
+"verifyElementPropertyValue(response, ""total"", 12)",,Verifikasi jumlah total user pada JSon,,2022-09-22 23:52:25,2022-09-22 23:52:25,0.125s,PASSED
+"verifyElementPropertyValue(response, ""data[3].first_name"", ""Byron"")",,Verifikasi user terlampir pada JSon,,2022-09-22 23:52:25,2022-09-22 23:52:25,0.045s,PASSED
+,,,,,,,
+Test Cases/TC02_Post_New_User,,Menguji API Post - membuat User baru,,2022-09-22 23:52:25,2022-09-22 23:52:26,1.266s,PASSED
+"response = sendRequest(findTestObject(""CRUD_API/Post API/Post New User""))",,Menguji API Post New User,,2022-09-22 23:52:26,2022-09-22 23:52:26,0.715s,PASSED
+"verifyResponseStatusCode(response, 201)",,Verifikasi Response & Kode Status,,2022-09-22 23:52:26,2022-09-22 23:52:26,0.000s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""morpheus"")",,Verifikasi value membuat user baru,,2022-09-22 23:52:26,2022-09-22 23:52:26,0.049s,PASSED
+,,,,,,,
+Test Cases/TC03_Post_Succes_Registered,,Verifikasi API Post Sukses Registrasi,,2022-09-22 23:52:26,2022-09-22 23:52:27,1.177s,PASSED
+"response = sendRequest(findTestObject(""CRUD_API/Post API/Post Success Register""))",,Menguji API Post Sukses Register,,2022-09-22 23:52:27,2022-09-22 23:52:27,0.638s,PASSED
+"verifyResponseStatusCode(response, 200)",,Verifikasi Response & Kode Status,,2022-09-22 23:52:27,2022-09-22 23:52:27,0.000s,PASSED
+"verifyElementPropertyValue(response, ""token"", ""QpwL5tke4Pnpja7X4"")",,Verfikasi value hasil post Sukses Register,,2022-09-22 23:52:27,2022-09-22 23:52:27,0.035s,PASSED
+,,,,,,,
+Test Cases/TC04_Validasi_Response_Login,,Verifikasi response Login,,2022-09-22 23:52:27,2022-09-22 23:52:30,2.553s,PASSED
+"sendRequest(findTestObject(""CRUD_API/Post API/Post Success Login""))",,Test API Post sukses Login,,2022-09-22 23:52:28,2022-09-22 23:52:29,0.621s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CRUD_API/Post API/Post Success Login""))",,Verifikasi Response,,2022-09-22 23:52:29,2022-09-22 23:52:30,1.331s,PASSED
+"verifyResponseStatusCode(response, 200)",,Verifikasi Sukses kode,,2022-09-22 23:52:30,2022-09-22 23:52:30,0.007s,PASSED
+"verifyElementPropertyValue(response, ""token"", ""QpwL5tke4Pnpja7X4"")",,Verifikasi value sukses di JSon,,2022-09-22 23:52:30,2022-09-22 23:52:30,0.040s,PASSED
+,,,,,,,
+Test Cases/TC05_Validasi_Response_Update,,Verifikasi response Uupdate,,2022-09-22 23:52:30,2022-09-22 23:52:33,2.490s,PASSED
+"sendRequest(findTestObject(""CRUD_API/Put API/Put API Update user""))",,Validasi request API update,,2022-09-22 23:52:31,2022-09-22 23:52:31,0.619s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CRUD_API/Put API/Put API Update user""))",,Validasi response,,2022-09-22 23:52:31,2022-09-22 23:52:32,1.248s,PASSED
+"verifyResponseStatusCode(response, 200)",,Validasi succes code API,,2022-09-22 23:52:32,2022-09-22 23:52:32,0.012s,PASSED
+"verifyElementPropertyValue(response, ""job"", ""zion resident"")",,Validasi value pada JSon,,2022-09-22 23:52:32,2022-09-22 23:52:33,0.045s,PASSED
+,,,,,,,
+Test Cases/TC06_Validasi_Response_Delete,,Verifikasi API Delete,,2022-09-22 23:52:33,2022-09-22 23:52:35,2.195s,PASSED
+"sendRequest(findTestObject(""CRUD_API/Delete API/Delete User""))",,API Request Delete,,2022-09-22 23:52:33,2022-09-22 23:52:34,0.617s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CRUD_API/Delete API/Delete User""))",,Validasi Response,,2022-09-22 23:52:34,2022-09-22 23:52:35,0.979s,PASSED
+"verifyResponseStatusCode(response, 204)",,,,2022-09-22 23:52:35,2022-09-22 23:52:35,0.000s,PASSED
